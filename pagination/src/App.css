@@ -1,0 +1,40 @@
+.App {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptable{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+
+}
+
+td, th {
+  
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.tableheader{
+  color: white;
+  background-color: rgb(20, 129, 93);
+}
+
+button, p{
+  color: white;
+  background-color: rgb(20, 129, 93);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
