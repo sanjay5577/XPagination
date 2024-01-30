@@ -22,8 +22,8 @@ function App() {
 
       }
     })
-    .catch(() => {
-      console.log('Error occured when fetching flags data');
+    .catch((e) => {
+      console.log(e.message);
     });
 
     
@@ -39,8 +39,8 @@ function App() {
       return apidata.data;
     }
     catch(e){
-        console.log(e.message)
-        alert("failed to fetch data")
+        console.log(e)
+        alert(e.message)
     }
     
   }
