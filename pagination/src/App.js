@@ -40,6 +40,7 @@ function App() {
     }
     catch(e){
         console.log(e.message)
+        alert("failed to fetch data")
     }
     
   }
@@ -71,12 +72,15 @@ function App() {
     <div className="App">
       <h2>Employee Data Table</h2>
       <table className="emptable">
+      <thead>
         <tr className="tableheader">
           <th>ID</th>
           <th>Name</th>
           <th>Email</th>
           <th>Role</th>
         </tr>
+        </thead>
+        <tbody>
         {
           pagedata.map((item)=>{
             return(
@@ -90,7 +94,7 @@ function App() {
             
           })
         }
-
+       </tbody>
       </table>
 
       <div className="pagination">
