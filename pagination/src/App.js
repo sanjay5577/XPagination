@@ -23,7 +23,7 @@ function App() {
       }
     })
     .catch((e) => {
-      console.log(e.message);
+      alert("failed to fetch data")
     });
 
     
@@ -39,8 +39,8 @@ function App() {
       return apidata.data;
     }
     catch(e){
-        console.log(e)
-        alert(e.message)
+        // console.log(e)
+        alert("failed to fetch data")
     }
     
   }
